@@ -35,6 +35,10 @@
       <ul class="user-navigation">
         <li class="account-link">Равшан Джамшутович</li>
       </ul>
+      <!-- правильно ли здесь добавляется новый список
+        с заказами и личным кабинетом?
+        каким образом это сработает?
+        JS добавит новый список на страницу?-->
       <ul class="account-navigation">
         <li><a href="my_orders.html">Мои заказы</a></li>
         <li><a href="personal_area.html">Личный кабинет</a></li>
@@ -60,7 +64,7 @@
         <h1 class="page-title">
             Перфораторы
         </h1>
-     
+
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -90,7 +94,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -123,7 +127,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -144,24 +148,31 @@
                 </li>
 
                 <!-- 3 элемент (выбранный)-->
-                <li class="current catalog-item">
+                <li class="catalog-item">
                     <h3>
                         <a href="catalog-item.html">
                             <span class="catalog-category">Перфоратор</span>
                             <span class="catalog-item-title">BOSCH BFG 2000</span>
                         </a>
                     </h3>
-                    <p class="hidden catalog-item-image">
+                    <!-- В макете барбершопа картинку элемента в каталоге
+                        заключают в тэг <p>
+                        Зачем это сделано, это же тэг для текста?
+
+                        По моей логике при наведении на картинку элемента,
+                        становится видимым контейнер catalog-item-navigation.
+                        По умолчанию он скрыт. так ли это?
+                      -->
+                    <p class="current-catalog-item-image catalog-item-image">
                         <a href="catalog-item.html">
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
                         </a>
                     </p>
-                    <!--Данный блок нужно добавлять в каждую элемент списка каталога товаров? 
-                        просто где не активен данный блок, мы его будем скрывать? 
-                        Это касается так же блока с картинкой и ценой? 
-                        (у некоторых элементов нет старой и новой цены, есть просто цена)
-                        Если да, то как лучше его назвать? ничего в голову не лезет -->
-                    <div class="catalog-navigation">
+                    <!-- Контейнер catalog-item-navigation нужно добавлять
+                        в каждую элемент списка каталога товаров?
+                        Где он не активен данный контейнер, мы его будем скрывать?
+                        Или этот контейнер будет появляться с помощью JS и шаблона? -->
+                    <div class="catalog-item-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -173,7 +184,9 @@
                             </a>
                         </p>
                     </div>
-                    <p class="hidden catalog-item-old-price">
+                    <!-- Как правильно оформить тэги цены, где только одна цена?
+                      скрываем тэг старой цены? -->
+                    <p class="catalog-item-old-price">
                             <b>12500 ₽</b>
                         </p>
                     <p class="catalog-item-new-price">
@@ -194,7 +207,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -227,7 +240,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -260,7 +273,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 2000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -272,7 +285,7 @@
                             </a>
                         </p>
                     </div>
-                    <p class="hidden catalog-item-old-price">
+                    <p class="atalog-item-old-price">
                         <b>12500 ₽</b>
                     </p>
                     <p class="catalog-item-new-price">
@@ -293,7 +306,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 3000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -312,7 +325,7 @@
                         <b>15500 ₽</b>
                     </p>
                 </li>
-    
+
                 <!-- 8 элемент-->
                 <li class="catalog-item">
                     <h3>
@@ -326,7 +339,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 6000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -359,7 +372,7 @@
                             <img src="img/product-1.jpg" alt="Перфоратор BOSCH BFG 2000">
                         </a>
                     </p>
-                    <div class="hidden catalog-navigation">
+                    <div class="catalog-navigation">
                         <p>
                             <a class="button" href="busket.html">
                                 Купить
@@ -371,7 +384,7 @@
                             </a>
                         </p>
                     </div>
-                    <p class="hidden catalog-item-old-price">
+                    <p class="atalog-item-old-price">
                         <b>12500 ₽</b>
                     </p>
                     <p class="catalog-item-new-price">
@@ -387,61 +400,57 @@
 
     <footer class="footer">
 
-      <section class="top-footer">
-        <a class="footer-logo">
-          <img src="img/index-logo.svg" alt="Логотип «Техномарт»">
-        </a>
-        <span class="footer-contact">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55</p>
-        </span>
-        <ul class="footer-top-navigation">
-          <li><a href="company.html">Компания</a></li> 
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="footer-bottom-navigation">
-          <li><a href="materials.html">Материалы</a></li> 
-          <li><a href="technique.html">Техника</a></li>
-          <li><a href="tool.html">Инструмент</a></li>
-          <li><a href="special_offers.html">Спецпредложения</a></li>
-        </ul>
-      </section>
-
-      <section class="bottom-footer">
-        <p class="footer-copyright">
-          © 2010–2019 Компания «Техномарт»<br>
-          Все права защищены
-        </p>
-          <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+        <section class="top-footer">
+          <a class="footer-logo">
+            <img src="img/index-logo.svg" alt="Логотип «Техномарт»">
+          </a>
+          <p class="footer-contact">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55
+            </p>
+          <ul class="footer-top-navigation">
+            <li><a href="company.html">Компания</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="delivery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
-        <span class="footer-feedback">
-          <b>Обратная связь:</b>
-          <a class="button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </span>
-        <span class="footer-design">
-          <b>Разработано —</b>
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </span>
-      </section>
+          <ul class="footer-bottom-navigation">
+            <li><a href="materials.html">Материалы</a></li>
+            <li><a href="technique.html">Техника</a></li>
+            <li><a href="tool.html">Инструмент</a></li>
+            <li><a href="special_offers.html">Спецпредложения</a></li>
+          </ul>
+        </section>
 
-    </footer>
+        <section class="bottom-footer">
+          <p class="footer-copyright">
+            © 2010–2019 Компания «Техномарт»<br>
+            Все права защищены
+          </p>
+            <ul class="footer-social">
+              <li><a class="social-button" href="#">Вконтакте</a></li>
+              <li><a class="social-button" href="#">Фейсбук</a></li>
+              <li><a class="social-button" href="#">Инстаграм</a></li>
+            </ul>
+          <p class="footer-feedback">
+            <b>Обратная связь:</b>
+            <a class="button" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-design">
+            <b>Разработано —</b>
+            <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+        </section>
 
-    <section class="modal modal-contact-us">
-        <b>Ваше имя:</b>
-        <b>Ваш e-mail:</b>
-        <b>текст письма:</b>
+      </footer>
+
+    <section class="modal modal-basket">
+        <b>Товар добавлен в корзину!</b>
+        <a class="button checkout-button" href="checkout.html">Оформить заказ</a>
+        <span class="button continue-button">Продолжить покупки</span>
         <span class="modal-close">x</span>
-        <a class="button" href="#">Отправить</a>
-      </section>
-      
-      <section class="modal modal-map">
-        <span class="modal-close">x</span>
-      </section>
+    </section>
+
   </body>
 </html>

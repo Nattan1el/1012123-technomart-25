@@ -47,6 +47,162 @@
 
     <main class="conteiner">
       <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
+      <section class="main-sections">
+        <h2 class="visually-hidden">Основные разделы каталога</h2>
+        <ul>
+          <li>
+            <h3>Материалы</h3>
+            <a class="section-button" href="materials.html">На любой вкус</a>
+          </li>
+          <li>
+              <h3>Инструмент</h3>
+            <a class="section-button" href="tool.html">На все случаи</a>
+          </li>
+          <li>
+              <h3>Техника</h3>
+            <a class="section-button" href="equipment.html">Для стройки</a>
+          </li>
+          <li>
+              <h3>Скидки 50%</h3>
+            <a class="section-button" href="discounts.html">На 350 товаров</a>
+          </li>
+          <li>
+              <h3>Доставка</h3>
+            <a class="section-button" href="delivery.html">Бесплатно</a>
+          </li>
+        </ul>
+        <!-- Как правильно оформить блок со слайдером "перфораторы и дрели"?
+      Скорее всего это отдельный блок, он не включен в список main-sections.
+      Его мы заключаем в div?
+      И изображение здесь не контентное, а фоновое?-->
+      <div class="slider">
+        <div class="slide slide1">
+          <span class="slide1-title">Перфораторы</span>
+          <p>Настоящие мужские игрушки</p>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
+        <div class="slide slide2">
+            <span class="slide2-title">Дрели</span>
+            <p>Соседям на радость!</p>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+      </div>
+      </section>
+      <section class="popular">
+        <h2>Популярные товары:</h2>
+        <a class="button" href="popular.html">Все популярные товары</a>
+        <!--В данном случае мы можем использовать точно такую же разметку
+        и такие же классы каталога популярных товаров, как и на странице каталога?-->
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Перфоратор</span>
+                <span class="catalog-item-title">Bosch Bfg 9000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-2.jpg" alt="Перфоратор Bosch Bfg 9000">
+              </a>
+            </p>
+            <div class="visually-hidden catalog-navigation">
+              <a class="button" href="busket.html">
+                Купить
+              </a>
+              <a class="button" href="bookmarks.html">
+                В закладки
+              </a>
+            </div>
+            <p class="catalog-item-old-price">
+              <b>32500 ₽</b>
+            </p>
+            <p class="catalog-item-new-price">
+              <b>25500 ₽</b>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Перфоратор</span>
+                <span class="catalog-item-title">Bosch Bfg 6000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 3000">
+              </a>
+            </p>
+            <div class="visually-hidden catalog-navigation">
+              <a class="button" href="busket.html">
+                Купить
+              </a>
+              <a class="button" href="bookmarks.html">
+                В закладки
+              </a>
+            </div>
+            <p class="catalog-item-old-price">
+              <b>22500 ₽</b>
+            </p>
+            <p class="catalog-item-new-price">
+              <b>15500 ₽</b>
+            </p>
+          </li>
+          <li class="catalog-item">
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Перфоратор</span>
+                <span class="catalog-item-title">Bosch Bfg 6000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
+              </a>
+            </p>
+            <div class="visually-hidden catalog-navigation">
+              <a class="button" href="busket.html">
+                Купить
+              </a>
+              <a class="button" href="bookmarks.html">
+                В закладки
+              </a>
+            </div>
+            <p class="catalog-item-old-price">
+              <b>30500 ₽</b>
+            </p>
+            <p class="catalog-item-new-price">
+              <b>23500 ₽</b>
+            </p>
+          </li>
+          <li class="catalog-item">
+          <!--Как лучше реализовать наклейку "new?"
+          Как отдельную картинку или через псевдоэлемент?-->
+            <h3>
+              <a href="catalog-item.html">
+                <span class="catalog-category">Перфоратор</span>
+                <span class="catalog-item-title">Bosch Bfg 2000</span>
+              </a>
+            </h3>
+            <p class="catalog-item-image">
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 2000">
+              </a>
+            </p>
+            <div class="visually-hidden catalog-navigation">
+              <a class="button" href="busket.html">
+                Купить
+              </a>
+              <a class="button" href="bookmarks.html">
+                В закладки
+              </a>
+            </div>
+            <p class="catalog-item-new-price">
+              <b>12500 ₽</b>
+            </p>
+          </li>
+        </ul>
+      </section>
       <section class="company">
         <h2>Компания «Техномарт»</h2>
         <p>

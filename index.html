@@ -88,11 +88,13 @@
           </div>
       </div>
       </section>
-      <section class="popular">
-        <h2>Популярные товары:</h2>
-        <a class="button" href="popular.html">Все популярные товары</a>
-        <!--В данном случае мы можем использовать точно такую же разметку
-        и такие же классы каталога популярных товаров, как и на странице каталога?-->
+      <section class="popular-products">
+        <div class="popular-footer">
+          <h2>Популярные товары:</h2>
+          <a class="button" href="popular_products.html">Все популярные товары</a>
+          <!--В данном случае мы можем использовать точно такую же разметку
+          и такие же классы каталога популярных товаров, как и на странице каталога?-->
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>
@@ -202,6 +204,91 @@
             </p>
           </li>
         </ul>
+      </section>
+      <section class="popular-brands">
+        <div class="popular-footer">
+          <h2>Популярные производители:</h2>
+          <a class="button" href="brands.html">Все производители</a>
+        </div>
+        <ul class="brands-list">
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_bosch.png" alt="Bosch"></a>
+          </li>
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_makita.png" alt="Makita"></a>
+          </li>
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_dewalt.png" alt="DeWalt"></a>
+          </li>
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_interskol.png" alt="Интерскол"></a>
+          </li>
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_hitachi.png" alt="Hitachi"></a>
+          </li>
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_lg.png" alt="LG"></a>
+          </li>
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_aeg.png" alt="AEG"></a>
+          </li>
+          <li class="brands-item">
+            <a href="#"><img src="img/brand_metabo.png" alt="Metabo"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <h2>Сервисы</h2>
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
+        <!--Как правильно оформить раздел сервисы? Мы верстаем список сервисов (оформляем в виде ссылок)
+        При клике на любой сервис, соседний блок справа изменяется? Мы изначально верстаем описание всех сервисов,
+        только не активным в данный момент мы присваевам класс visually-hidden?-->
+        <ul class="services-list">
+          <li class="service-item">
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li class="service-item">
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li class="service-item">
+            <a href="credit.html">Кредит</a>
+          </li>
+        </ul>
+        <div class="service-description">
+          <div class="delivery-description">
+            <span>Доставка</span>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!
+            </p>
+            <img src="img/delivery_image.png" alt="Доставка">
+          </div>
+          <div class="visually-hidden warranty-description">
+            <span>Гарантия</span>
+            <p>
+              Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгаранием,
+              вы всегда можете быть уверены в нашей гарантии.
+              Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.
+            </p>
+            <img src="img/warranty_image.png" alt="Гарантия">
+            </div>
+            <div class="visually-hidden credit-description">
+              <span>Кредит</span>
+              <p>
+                Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="button" href="credit.html">Отправить заявку</a>
+              <img src="img/credit_image.png" alt="Кредит">
+              </div>
+        </div>
       </section>
       <section class="company">
         <h2>Компания «Техномарт»</h2>

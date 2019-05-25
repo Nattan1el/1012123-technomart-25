@@ -8,7 +8,7 @@
     <header class="header">
       <div class="top-navigation">
         <a class="header-logo">
-          <img src="img/index-logo.svg" alt="Логотип «Техномарт»">
+          <img src="img/logo.svg" width="109" height="19" alt="Логотип «Техномарт»">
         </a>
         <input type="text" placeholder="Поиск" name="search" id="search"></input>
         <a class="button" href="bookmarks.html">Закладки</a>
@@ -74,6 +74,7 @@
         <!-- Как правильно оформить блок со слайдером "перфораторы и дрели"?
       Скорее всего это отдельный блок, он не включен в список main-sections.
       Его мы заключаем в div?
+      На последней лекции, лектор вообще сказал что может быть лучше гридами сделать.
       И изображение здесь не контентное, а фоновое?-->
       <div class="slider">
         <div class="slide slide1">
@@ -82,10 +83,10 @@
           <a class="button" href="catalog.html">Открыть каталог</a>
         </div>
         <div class="slide slide2">
-            <span class="slide2-title">Дрели</span>
-            <p>Соседям на радость!</p>
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
+          <span class="slide2-title">Дрели</span>
+          <p>Соседям на радость!</p>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
       </div>
       </section>
       <section class="popular-products">
@@ -97,17 +98,15 @@
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
+            <a href="catalog-item.html">
+              <h3>
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-item-title">Bosch Bfg 9000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-2.jpg" alt="Перфоратор Bosch Bfg 9000">
-              </a>
-            </p>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="img/perforator-4.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 9000">
+              </p>
+            </a>
             <div class="visually-hidden catalog-navigation">
               <a class="button" href="busket.html">
                 Купить
@@ -124,17 +123,15 @@
             </p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
+            <a href="catalog-item.html">
+              <h3>
                 <span class="catalog-category">Перфоратор</span>
-                <span class="catalog-item-title">Bosch Bfg 6000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 3000">
-              </a>
-            </p>
+                <span class="catalog-item-title">Bosch Bfg 3000</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 3000">
+              </p>
+            </a>
             <div class="visually-hidden catalog-navigation">
               <a class="button" href="busket.html">
                 Купить
@@ -151,17 +148,15 @@
             </p>
           </li>
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
+            <a href="catalog-item.html">
+              <h3>
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-item-title">Bosch Bfg 6000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-              </a>
-            </p>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+              </p>
+            </a>
             <div class="visually-hidden catalog-navigation">
               <a class="button" href="busket.html">
                 Купить
@@ -180,17 +175,15 @@
           <li class="catalog-item">
           <!--Как лучше реализовать наклейку "new?"
           Как отдельную картинку или через псевдоэлемент?-->
-            <h3>
-              <a href="catalog-item.html">
+            <a href="catalog-item.html">
+              <h3>
                 <span class="catalog-category">Перфоратор</span>
                 <span class="catalog-item-title">Bosch Bfg 2000</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 2000">
-              </a>
-            </p>
+              </h3>
+              <p class="catalog-item-image">
+                <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 2000">
+              </p>
+            </a>
             <div class="visually-hidden catalog-navigation">
               <a class="button" href="busket.html">
                 Купить
@@ -212,28 +205,28 @@
         </div>
         <ul class="brands-list">
           <li class="brands-item">
-            <a href="#"><img src="img/brand_bosch.png" alt="Bosch"></a>
+            <a href="#"><img src="img/brand-bosch.png" width="126" height="37" alt="Bosch"></a>
           </li>
           <li class="brands-item">
-            <a href="#"><img src="img/brand_makita.png" alt="Makita"></a>
+            <a href="#"><img src="img/brand-makita.png" width="123" height="40" alt="Makita"></a>
           </li>
           <li class="brands-item">
-            <a href="#"><img src="img/brand_dewalt.png" alt="DeWalt"></a>
+            <a href="#"><img src="img/brand-dewalt.png" width="146" height="44" alt="DeWalt"></a>
           </li>
           <li class="brands-item">
-            <a href="#"><img src="img/brand_interskol.png" alt="Интерскол"></a>
+            <a href="#"><img src="img/brand-interskol.png" width="200" height="88" alt="Интерскол"></a>
           </li>
           <li class="brands-item">
-            <a href="#"><img src="img/brand_hitachi.png" alt="Hitachi"></a>
+            <a href="#"><img src="img/brand-hitachi.png" width="169" height="31" alt="Hitachi"></a>
           </li>
           <li class="brands-item">
-            <a href="#"><img src="img/brand_lg.png" alt="LG"></a>
+            <a href="#"><img src="img/brand-lg.png" width="121" height="73" alt="LG"></a>
           </li>
           <li class="brands-item">
-            <a href="#"><img src="img/brand_aeg.png" alt="AEG"></a>
+            <a href="#"><img src="img/brand-aeg.png" width="151" height="96" alt="AEG"></a>
           </li>
           <li class="brands-item">
-            <a href="#"><img src="img/brand_metabo.png" alt="Metabo"></a>
+            <a href="#"><img src="img/brand-metabo.png" width="204" height="69" alt="Metabo"></a>
           </li>
         </ul>
       </section>
@@ -244,8 +237,8 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <!--Как правильно оформить раздел сервисы? Мы верстаем список сервисов (оформляем в виде ссылок)
-        При клике на любой сервис, соседний блок справа изменяется? Мы изначально верстаем описание всех сервисов,
-        только не активным в данный момент мы присваевам класс visually-hidden?-->
+        При клике на любой сервис, соседний блок справа изменяется?
+        Всем неактиавным в данный момент мы присваевам класс visually-hidden?-->
         <ul class="services-list">
           <li class="service-item">
             <a href="delivery.html">Доставка</a>
@@ -266,7 +259,9 @@
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!
             </p>
-            <img src="img/delivery_image.png" alt="Доставка">
+            <p class="service-image">
+              <img src="img/service-delivery.png" width="468" width="261" alt="Доставка">
+            </p>
           </div>
           <div class="visually-hidden warranty-description">
             <span>Гарантия</span>
@@ -277,7 +272,9 @@
               Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.
             </p>
-            <img src="img/warranty_image.png" alt="Гарантия">
+            <p class="service-image">
+              <img src="img/service-warranty.png" width="389" height="283" alt="Гарантия">
+            </p>
             </div>
             <div class="visually-hidden credit-description">
               <span>Кредит</span>
@@ -286,7 +283,9 @@
                 Кредитные консультанты придут вам на помощь.
               </p>
               <a class="button" href="credit.html">Отправить заявку</a>
-              <img src="img/credit_image.png" alt="Кредит">
+              <p class="service-image">
+                <img src="img/service-credit.png" width="465" height="285" alt="Кредит">
+              </p>
               </div>
         </div>
       </section>
@@ -313,8 +312,9 @@
           Вы можете забрать товар сами,
           заехав к нам в офис:
         </p>
-        <a class="button" href="map.html">
-          <img src="img/map.svg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <!--Карта должна быть ссылкой?-->
+        <a href="map.html">
+          <img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
         <a class="button" href="#">Заблудились? Напишите нам!</a>
       </section>
@@ -324,7 +324,7 @@
     <footer class="footer">
       <section class="top-footer">
         <a class="footer-logo">
-          <img src="img/index-logo.svg" alt="Логотип «Техномарт»">
+          <img src="img/logo.svg" width="109" height="19" alt="Логотип «Техномарт»">
         </a>
         <p class="footer-contact">
           <adress>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>

@@ -8,9 +8,9 @@
     <header class="header">
       <div class="top-navigation">
         <a class="header-logo" href="index.html">
-          <img src="img/index-logo.svg" alt="Логотип «Техномарт»">
+          <img src="img/logo.svg" width="109" height="19" alt="Логотип «Техномарт»">
         </a>
-        <input type="text" placeholder="Поиск" name="search" id="search"></input>
+        <input type="text" placeholder="Поиск" name="search" id="search">
         <a class="button" href="bookmarks.html">Закладки</a>
         <a class="button" href="basket.html">Корзина</a>
         <a class="button" href="checkout.html">Оформить заказ</a>
@@ -50,32 +50,47 @@
 
 
     <main class="catalog-content">
-      <h1 class="visually-hidden">Каталог интернет-магазин Техномарт</h1>
+      <h1 class="visually-hidden">Каталог интернет-магазина Техномарт</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="tool.html">Инструмент</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
+      <p class="catalog-title">Перфораторы</p>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2>Фильтр</h2>
+        <form>
+        </form>
         <!-- Здесь будет форма -->
+      </section>
+      <section class="sorting">
+        <h2>Сортировка</h2>
+        <ul class="sorting-list">
+          <li class="sorting-item"><a href="#">По цене</a></li>
+          <li class="sorting-item"><a href="#">По типу</a></li>
+          <li class="sorting-item"><a href="#">По функционалу</a></li>
+        </ul>
+        <!--Кнопки выделить в отдельный блок?
+          или их можно включить в список сортировки? -->
+          <div class="sorting-buttons">
+            <span class="sorting-button-up">По возрастанию</span>
+            <span class="sorting-button-top">По убыванию</span>
+          </div>
       </section>
        <section class="catalog">
         <h2 class="visually-hidden">Список перфораторов</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
-                  <span class="catalog-item-title">Bosch Bfg 6000</span>
-                </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                  <span class="catalog-item-title">Bosch Bfg 3000</span>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 3000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                   Купить
@@ -92,17 +107,15 @@
               </p>
             </li>
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 6000</span>
-                </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                   Купить
@@ -120,17 +133,15 @@
             </li>
             <!--элемент (выбранный)-->
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 2000</span>
-                </a>
-              </h3>
-              <p class="current catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="current catalog-item-image">
+                  <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="catalog-item-navigation">
                 <a class="button" href="busket.html">
                     Купить
@@ -144,17 +155,15 @@
               </p>
             </li>
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 6000</span>
-                </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                   Купить
@@ -171,17 +180,15 @@
               </p>
             </li>
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 6000</span>
-                </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                   Купить
@@ -198,17 +205,15 @@
               </p>
             </li>
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 6000</span>
-                </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                   Купить
@@ -222,17 +227,15 @@
               </p>
             </li>
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 6000</span>
-                  </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                     Купить
@@ -249,17 +252,15 @@
               </p>
             </li>
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 6000</span>
-                </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                   Купить
@@ -276,17 +277,15 @@
               </p>
             </li>
             <li class="catalog-item">
-              <h3>
-                <a href="catalog-item.html">
+              <a href="catalog-item.html">
+                <h3>
                   <span class="catalog-category">Перфоратор</span>
                   <span class="catalog-item-title">Bosch Bfg 6000</span>
-                </a>
-              </h3>
-              <p class="catalog-item-image">
-                <a href="catalog-item.html">
-                  <img src="img/product-1.jpg" alt="Перфоратор Bosch Bfg 6000">
-                </a>
-              </p>
+                </h3>
+                <p class="catalog-item-image">
+                  <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор Bosch Bfg 6000">
+                </p>
+              </a>
               <div class="visually-hidden catalog-navigation">
                 <a class="button" href="busket.html">
                   Купить
@@ -300,6 +299,20 @@
               </p>
             </li>
           </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
+          </ul>
+        </section>
+        <section class="catalog-info">
+          <p class="catalog-info-title">Пара слов о перфораторах</p>
+          <p class="catalog-info-description">
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
+            ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
         </section>
     </main>
 
@@ -307,7 +320,7 @@
     <footer class="footer">
       <section class="top-footer">
         <a class="footer-logo">
-          <img src="img/index-logo.svg" alt="Логотип «Техномарт»">
+          <img src="img/logo.svg" width="109" height="19" alt="Логотип «Техномарт»">
         </a>
         <p class="footer-contact">
           <adress>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>

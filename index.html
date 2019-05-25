@@ -25,11 +25,8 @@
         <adress>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>
       </div>
       <ul class="user-navigation">
-        <!--Адрес у ссылок Вход и Адрес должен быть одинаковый или разный?
-        Часто встречал сайты, где переход осуществляется на одну страницу,
-        где ты уже выбираешь зарегаться или войти-->
-        <li class="login-link"><a href="authorization.html">Вход</a></li>
-        <li class="register-link"><a href="authorization.html">Регистрация</a></li>
+        <li class="login-link"><a href="#">Вход</a></li>
+        <li class="register-link"><a href="#">Регистрация</a></li>
       </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -72,22 +69,23 @@
           </li>
         </ul>
         <!-- Как правильно оформить блок со слайдером "перфораторы и дрели"?
-      Скорее всего это отдельный блок, он не включен в список main-sections.
-      Его мы заключаем в div?
-      На последней лекции, лектор вообще сказал что может быть лучше гридами сделать.
-      И изображение здесь не контентное, а фоновое?-->
-      <div class="slider">
-        <div class="slide slide1">
-          <span class="slide1-title">Перфораторы</span>
-          <p>Настоящие мужские игрушки</p>
-          <a class="button" href="catalog.html">Открыть каталог</a>
+        Скорее всего это отдельный блок, он не включен в список main-sections.
+        Его мы заключаем в div?
+        На последней лекции, лектор вообще сказал что может быть лучше гридами сделать.
+        И изображение здесь не контентное, а фоновое?
+        И как оформить стрелки(кнопки), которые будут переключать слайды? С помощью псевдожлементов?-->
+        <div class="slider">
+          <div class="slide slide1">
+            <span class="slide1-title">Перфораторы</span>
+            <p>Настоящие мужские игрушки</p>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
+          <div class="slide slide2">
+            <span class="slide2-title">Дрели</span>
+            <p>Соседям на радость!</p>
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
         </div>
-        <div class="slide slide2">
-          <span class="slide2-title">Дрели</span>
-          <p>Соседям на радость!</p>
-          <a class="button" href="catalog.html">Открыть каталог</a>
-        </div>
-      </div>
       </section>
       <section class="popular-products">
         <div class="popular-footer">
@@ -174,7 +172,7 @@
           </li>
           <li class="catalog-item">
           <!--Как лучше реализовать наклейку "new?"
-          Как отдельную картинку или через псевдоэлемент?-->
+          Через псевдоэлемент?-->
             <a href="catalog-item.html">
               <h3>
                 <span class="catalog-category">Перфоратор</span>
@@ -237,7 +235,7 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <!--Как правильно оформить раздел сервисы? Мы верстаем список сервисов (оформляем в виде ссылок)
-        При клике на любой сервис, соседний блок справа изменяется?
+        При клике на любой сервис, соседний блок справа изменяется? Или вместо ссылок тут лучше кнопки сделать?
         Всем неактиавным в данный момент мы присваевам класс visually-hidden?-->
         <ul class="services-list">
           <li class="service-item">
@@ -312,8 +310,7 @@
           Вы можете забрать товар сами,
           заехав к нам в офис:
         </p>
-        <!--Карта должна быть ссылкой?-->
-        <a href="map.html">
+        <a href="#">
           <img src="img/map.jpg" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </a>
         <a class="button" href="#">Заблудились? Напишите нам!</a>
@@ -365,16 +362,31 @@
 
 
     <section class="modal modal-contact-us">
-      <!-- нужно сделать заголовок для этого попапа?
-        если да, то как назвать?-->
-      <!-- здесь будет форма-->
-        <span class="modal-close">x</span>
+      <h2 class="visually-hidden">Связаться с нами</h2>
+      <form class="contact-us-form" action="#" method="get">
+        <p>
+          <label for="contact-name">Ваше имя:</label>
+          <input type="text" name="name" id="contact-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="contact-email">Ваш e-mail:</label>
+          <input type="text" name="email" id="contact-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="contact-text">Текст письма:</label>
+          <textarea name="text" id="contact-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <p>
+          <button class="button" type="submit">Отправить</button>
+        </p>
+      </form>
+        <button class="modal-close">Закрыть</button>
       </section>
 
 
       <section class="modal modal-map">
-        <!-- здесь будет форма-->
-        <span class="modal-close">x</span>
+        <!--Здесь будет вставлена картинка или сама карта яндекс?-->
+        <button class="modal-close">Закрыть</button>
       </section>
   </body>
 </html>

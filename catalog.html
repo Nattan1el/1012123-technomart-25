@@ -29,11 +29,11 @@
       или достаточно просто ссылки? Но так как на главной странице здесь список с 2 элементами,
       то думаю здесь должен быть все равно список-->
       <ul class="user-navigation">
-        <li class="account-link"><a href="account.html">Равшан Джамшутович</a></li>
+        <li class="account-link"><a href="#">Равшан Джамшутович</a></li>
       </ul>
       <ul class="account-navigation">
-        <li><a href="my_orders.html">Мои заказы</a></li>
-        <li><a href="personal_area.html">Личный кабинет</a></li>
+        <li><a href="#">Мои заказы</a></li>
+        <li><a href="#">Личный кабинет</a></li>
       </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -60,9 +60,49 @@
       <p class="catalog-title">Перфораторы</p>
       <section class="filters">
         <h2>Фильтр</h2>
-        <form>
+        <form class="filters" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цена:</legend>
+            <!--Каким образом реализовать диапазон цены с 2 ползунками? через JS?-->
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
+                <label for="filter-bosch">Bosch</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-interskol" name="interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-makita" name="makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-dewalt" name="dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-hitachi" name="hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-battery" name="power-supply" value="battery" checked>
+              <label for="filter-battery">Аккумуляторные</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" id="filter-mains-supply" name="power-supply" value="mains-supply">
+              <label for="filter-mains-supply">Сетевые</label>
+            </li>
+          </fieldset>
+          <button class="filter-button button">Показать</button>
         </form>
-        <!-- Здесь будет форма -->
       </section>
       <section class="sorting">
         <h2>Сортировка</h2>
@@ -74,8 +114,8 @@
         <!--Кнопки выделить в отдельный блок?
           или их можно включить в список сортировки? -->
           <div class="sorting-buttons">
-            <span class="sorting-button-up">По возрастанию</span>
-            <span class="sorting-button-top">По убыванию</span>
+            <button class="sorting-button-up">По возрастанию</button>
+            <button class="sorting-button-top">По убыванию</button>
           </div>
       </section>
        <section class="catalog">
@@ -143,10 +183,10 @@
                 </p>
               </a>
               <div class="catalog-item-navigation">
-                <a class="button" href="busket.html">
+                <a class="item-navigation-button button" href="busket.html">
                     Купить
                 </a>
-                <a class="button" href="bookmarks.html">
+                <a class="item-navigation-button button" href="bookmarks.html">
                   В закладки
                 </a>
               </div>
@@ -362,9 +402,11 @@
 
     <section class="modal modal-basket">
       <b>Товар добавлен в корзину!</b>
-      <a class="button checkout-button" href="checkout.html">Оформить заказ</a>
-      <span class="modal-continue">Продолжить покупки</span>
-      <span class="modal-close">x</span>
+      <p  class="modal-basket-footer">
+        <a class="button checkout-button" href="checkout.html">Оформить заказ</a>
+        <button class="button modal-continue">Продолжить покупки</button>
+        <button class="modal-close">Закрыть</button>
+      </p>
     </section>
   </body>
 </html>

@@ -47,6 +47,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   white-space: nowrap;
+  text-indent: -1000px;
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -141,13 +142,16 @@ h2 {
 
 .search-form {
   position: relative;
+  flex-grow: 1;
+
 }
 
 .search-form input[type="search"] {
-  width: 270px;
+  width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 48px;
+  padding-right: 20px;
 
   font-size: 17px;
   line-height: 18px;
@@ -155,8 +159,14 @@ h2 {
   border: none;
 
   background-color: #293449;
+  background-color: #32425c;
 }
-
+/*---------------------FOR IE 11-----------------------------*/
+.search-form label {
+  position: absolute;
+  left: -9999px;
+}
+/*-----------------------------------------------------------*/
 .search-background {
   position: absolute;
   top: 12px;
@@ -172,7 +182,11 @@ h2 {
 }
 
 .search-form input[type=search]::placeholder {
-    color: #ffffff;
+  color: #ffffff;
+}
+
+.search-form input[type=search]:-ms-input-placeholder {
+  color: #ffffff;
 }
 
 .search-form input[type=search]:hover {
@@ -209,18 +223,28 @@ h2 {
 
 .bookmark {
   position: relative;
+  margin-left: auto;
   padding-left: 43px;
   padding-right: 30px;
+  /*
+  padding-left: 43px;
+  padding-right: 30px;
+  */
 
   background-color: #293449;
+  background-color: #32425c;
 }
 
 .basket {
   position: relative;
   padding-left: 47px;
   padding-right: 32px;
-
+  /*
+  padding-left: 47px;
+  padding-right: 32px;
+  */
   background-color: #293449;
+  background-color: #32425c;
 }
 
 .bookmark::before {
@@ -258,7 +282,10 @@ h2 {
 .order {
   padding-left: 20px;
   padding-right: 22px;
-
+  /*
+  padding-left: 20px;
+  padding-right: 22px;
+  */
   background-color: #63a63e;
 }
 
@@ -1402,6 +1429,160 @@ width: 510px;
   color: #ee3643;
 }
 
+/*--------------------------------СТРАНИЦА КАТАЛОГА--------------------------------*/
+
+.account-user {
+  background-color: #32425c
+}
+
+/*-----Хлебные крошки-----*/
+
+.breadcrumbs {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs::after {
+  background-color: #c5c9d1;
+}
+
+.catalog-content .catalog-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #f2f6f8;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+  width: 700px;
+  height: 38px;
+}
+
+.sorting h2 {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting-list {
+  color: #ee3643;
+  opacity: 0.3;
+}
+
+.sorting-list::after {
+  background-color: #c5c5c5;
+  background-color: #ee3643;
+}
+
+.filter h2 {
+  width: 220px;
+  height: 38px;
+  background-color: #f7f3ec;
+}
+
+.filter legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.filter .price-filter {
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
+}
+
+.price-filter::square {
+  width: 20px;
+  height: 22px;
+}
+
+.price-filter::square-point {
+  background-color: #ababab;
+}
+
+.price-filter::palka-green {
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.price-filter::palka-gray {
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.price-box .box {
+  width: 98px;
+  height: 38px;
+  background-color: #f7f3ec;
+}
+
+.price-box::tire {
+  width: 10px;
+  height: 1px;
+}
+
+.filters::separate {
+  width: 220px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.filter label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter checkbox {
+  width: 23px;
+  height: 23px;
+  background-color: #c5c5c5;
+}
+
+.filter submit {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  width: 140px;
+  height: 38px;
+  stroke: 1px solid #e5e5e5;
+}
+
+.pagination {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.pagination .small-box {
+  width: 38px;
+  height: 38px;
+}
+
+.pagination .big-box {
+  width: 140px;
+  height: 38px;
+}
+
+.catalog-info-title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.catalog-info-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
 .modal {
   display: none;
 }
+

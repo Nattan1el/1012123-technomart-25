@@ -161,12 +161,13 @@ h2 {
   background-color: #293449;
   background-color: #32425c;
 }
+
 /*---------------------FOR IE 11-----------------------------*/
 .search-form label {
   position: absolute;
   left: -9999px;
 }
-/*-----------------------------------------------------------*/
+
 .search-background {
   position: absolute;
   top: 12px;
@@ -226,10 +227,6 @@ h2 {
   margin-left: auto;
   padding-left: 43px;
   padding-right: 30px;
-  /*
-  padding-left: 43px;
-  padding-right: 30px;
-  */
 
   background-color: #293449;
   background-color: #32425c;
@@ -239,10 +236,6 @@ h2 {
   position: relative;
   padding-left: 47px;
   padding-right: 32px;
-  /*
-  padding-left: 47px;
-  padding-right: 32px;
-  */
   background-color: #293449;
   background-color: #32425c;
 }
@@ -282,10 +275,6 @@ h2 {
 .order {
   padding-left: 20px;
   padding-right: 22px;
-  /*
-  padding-left: 20px;
-  padding-right: 22px;
-  */
   background-color: #63a63e;
 }
 
@@ -387,10 +376,13 @@ h2 {
   color: #32425c;
 }
 
-.profile {
+.user-navigation {
+  margin-left: auto;
+}
+
+.user-navigation .navigation-link {
   padding: 0;
   margin: 0;
-  margin-left: auto;
   display: flex;
 
   text-align: center;
@@ -398,9 +390,8 @@ h2 {
   list-style: none;
 }
 
-.profile a {
+.navigation-link a {
   display: block;
-
   font-size: 21px;
   line-height: 21px;
 
@@ -1431,19 +1422,157 @@ width: 510px;
 
 /*--------------------------------СТРАНИЦА КАТАЛОГА--------------------------------*/
 
-.account-user {
-  background-color: #32425c
+.top-navigation .basket-add {
+  background-color: #ee3643;
+  padding-left: 43px;
 }
 
-/*-----Хлебные крошки-----*/
+.user-navigation {
+  width: 300px;
+}
+
+.account-link {
+  position: relative;
+  box-sizing: border-box;
+  width: 300px;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 30px;
+  
+  background-color: #ffffff;
+}
+
+.account-link::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 20px;
+  height: 18px;
+
+  background-image: url('../img/icon-user.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+
+}
+
+.account-link::after {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  right: 11px;
+  width: 20px;
+  height: 18px;
+
+  background-image: url('../img/icon-logout original.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+}
+
+.navigation-account {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 7px;
+  padding-left: 20px;
+
+  list-style: none;
+  text-decoration: underline;
+}
+
+.navigation-account li:first-child {
+  margin-right: 31px;
+}
+
+.navigation-account li:last-child {
+  list-style: disc;
+}
+
+.navigation-account a {
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #32425c;
+}
+
+
+/*  background-color: #32425c
+-----Хлебные крошки-----*/
 
 .breadcrumbs {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 54px;
+
+  list-style: none;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
 }
 
-.breadcrumbs::after {
+.breadcrumbs li:first-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li {
+  margin-right: 42px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  width: 2px;
+  height: 16px;
+
+  background-color: red;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs .home-page {
+  position: relative;
+  font-size: 0;
+}
+
+.breadcrumbs .home-page::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  left: -56px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url('../img/icon-home.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs::dfhddh {
   background-color: #c5c9d1;
 }
 
@@ -1456,8 +1585,9 @@ width: 510px;
 
 .sorting {
   background-color: #f7f3ec;
-  width: 700px;
+  /*width: 700px;
   height: 38px;
+  */
 }
 
 .sorting h2 {

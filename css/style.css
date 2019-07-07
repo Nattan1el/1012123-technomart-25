@@ -447,7 +447,7 @@ h2 {
 }
 
 .login:active::before {
-  opacity: 0.3;]
+  opacity: 0.3;
 }
 
 .main-navigation ul {
@@ -1421,7 +1421,7 @@ width: 510px;
 /*-----------------СТРАНИЦА КАТАЛОГА. НАВИГАЦИЯ ПОЛЬЗОВАТЕЛЯ В ШАПКЕ----------------*/
 
 .top-navigation .basket-add {
-  background-color: #ee3643;å
+  background-color: #ee3643;
 }
 
 .user-navigation {

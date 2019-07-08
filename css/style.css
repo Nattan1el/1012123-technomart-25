@@ -19,11 +19,9 @@ body {
 body > * > * {
   background: rgba(255, 255, 0, 0.3)
 }
-
 body > * > * > * {
   background: rgba(0, 0, 255, 0.3)
 }
-
 body > * > * > * > *  {
   background: rgba(0, 255, 255, 0.3)
 }
@@ -617,6 +615,10 @@ h2 {
 	position: relative;
 }
 
+.slider label {
+  font-size: 0;
+}
+
 .slide-control {
   display: flex;
   justify-content: space-between;
@@ -637,8 +639,8 @@ h2 {
 	width: 6px;
 }
 
-#button-1:checked ~ .slide-control label[for="button-1"],
-#button-2:checked ~ .slide-control label[for="button-2"] {
+.slider-switch-left:checked ~ .slide-control label[for="switch-left"],
+.slider-switch-right:checked ~ .slide-control label[for="switch-right"] {
 	background: #ee3643;
 }
 
@@ -677,11 +679,11 @@ h2 {
     left: 25px;
 }
 
-#button-1:checked ~ .slide-switching .slide-1 {
+.slider-switch-left:checked ~ .slide-switching .slide-1 {
 	background: url("../img/slide-2.jpg");
 	display: block;
 }
-#button-2:checked ~ .slide-switching .slide-2 {
+.slider-switch-right:checked ~ .slide-switching .slide-2 {
 	background: url("../img/slide-1.jpg");
 	display: block;
 }
@@ -1076,18 +1078,18 @@ h2 {
   background-color: #293449;
 }
 
-#delivery-button:checked ~ label[for=delivery-button],
-#guarantee-button:checked ~ label[for=guarantee-button],
-#credit-button:checked ~ label[for=credit-button] {
+.delivery-button:checked ~ label[for=delivery-button],
+.guarantee-button:checked ~ label[for=guarantee-button],
+.credit-button:checked ~ label[for=credit-button] {
 	background: #ffffff;
 	border-bottom: 1px solid #ffffff;
 	border-top: 1px solid #ffffff;
 	color: #32425c;
 }
 
-#delivery-button:checked  ~ .service-slider .service-content:nth-child(1),
-#guarantee-button:checked ~ .service-slider .service-content:nth-child(2),
-#credit-button:checked ~ .service-slider .service-content:nth-child(3) {
+.delivery-button:checked  ~ .service-slider .service-content:nth-child(1),
+.guarantee-button:checked ~ .service-slider .service-content:nth-child(2),
+.credit-button:checked ~ .service-slider .service-content:nth-child(3) {
 	display: block;
 }
 
@@ -2114,6 +2116,7 @@ width: 510px;
 /*----------МОДАЛЬНЫЕ ОКНА----------*/
 
 .modal {
+  display: none;
   position: fixed;
   width: 620px;
   margin-left: -310px;
@@ -2138,6 +2141,7 @@ width: 510px;
 
   background-color: #ff5357;
 }
+
 
 .contact-us-form {
   margin-top: 55px;
@@ -2288,10 +2292,86 @@ width: 510px;
 }
 
 .button-continue {
-  color: #000000;
   padding-bottom: 8px;
+
+  color: #000000;
+  background-color: rgba(255, 255, 255, 1);
+  
 }
 
+.button-continue:hover,
+.button-continue:focus {
+  color: #ff5357;
+}
 
+.button-continue:active {
+  color: rgba(0, 0, 0, 0.4)
+}
 
+.modal-show {
+  display: block;
 
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-close:hover,
+.modal-close:focus,
+.modal-close:active {
+  outline: none;
+}
+
+.modal input:hover,
+.modal textarea:hover {
+  outline: none;
+  border-color: #000000;
+}
+
+.modal input:focus,
+.modal textarea:focus {
+  outline: none;
+  border-color: #ff5357;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}

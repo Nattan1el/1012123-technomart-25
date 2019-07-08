@@ -78,14 +78,14 @@
               <a class="button" href="equipment.html">Для стройки</a>
             </div>
             <div class="slider">
-              <input class="visually-hidden" type="radio" id="button-1" name="slider" checked>
-              <input class="visually-hidden" type="radio" id="button-2" name="slider">
+              <input class="visually-hidden slider-switch-left" type="radio" id="switch-left" name="slider" checked>
+              <input class="visually-hidden slider-switch-right" type="radio" id="switch-right" name="slider">
               <div class="slide-control">
-                <label for="button-1"></label>
-                <label for="button-2"></label>
+                <label for="switch-left">Предыдущий слайд</label>
+                <label for="switch-right">Следующий слайд</label>
               </div>
-              <label class="slider-toggle slider-toggle-prev" for="button-1"></label>
-              <label class="slider-toggle slider-toggle-next" for="button-2"></label>
+              <label class="slider-toggle slider-toggle-prev" for="switch-left">Переключатель слайда влево</label>
+              <label class="slider-toggle slider-toggle-next" for="switch-right">Переключатель слайда справа</label>
               <div class="slide-switching">
                 <div class="slide slide-1">
                   <span class="slide-title">Дрели</span>
@@ -222,9 +222,9 @@
             </p>
           </div>
           <div class="service-navigation">
-            <input class="visually-hidden" type="radio" id="delivery-button" name="navigation" checked>
-            <input class="visually-hidden" type="radio" id="guarantee-button" name="navigation">
-            <input class="visually-hidden" type="radio" id="credit-button" name="navigation">
+            <input class="visually-hidden delivery-button" type="radio" id="delivery-button" name="navigation" checked>
+            <input class="visually-hidden guarantee-button" type="radio" id="guarantee-button" name="navigation">
+            <input class="visually-hidden credit-button" type="radio" id="credit-button" name="navigation">
             <label for="delivery-button">доставка</label>
             <label for="guarantee-button">гарантия</label>
             <label for="credit-button">кредит</label>
@@ -287,7 +287,7 @@
           <a class="contacts-map" href="#">
             <img class="map-image" src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
-          <a class="button section-button" href="#">Заблудились? Напишите нам!</a>
+          <a class="button section-button contact-us-button" href="#">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
@@ -406,16 +406,28 @@
           </p>
         </div>
         <p class="user-button">
-          <button class="button section-button" type="submit">Отправить</button>
+          <button class="button section-button" name="send-button" type="submit">Отправить</button>
         </p>
       </form>
         <button class="modal-close">Закрыть</button>
       </section>
+
+
+      <section class="modal modal-basket">
+        <b>Товар добавлен в корзину!</b>
+        <p class="modal-basket-footer">
+          <a class="button section-button checkout-button" href="checkout.html">Оформить заказ</a>
+          <button class="button button-continue">Продолжить покупки</button>
+          <button class="modal-close">Закрыть</button>
+        </p>
+      </section>
+
 
       <!--
       <section class="modal modal-map">
         <button class="modal-close">Закрыть</button>
       </section>
       -->
+      <script src="js/min-script-index.js"></script>
   </body>
 </html>

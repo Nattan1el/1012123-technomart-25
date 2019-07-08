@@ -13,20 +13,6 @@ body {
   background-color: #ffffff;
 }
 
-
-
-/*
-body > * > * {
-  background: rgba(255, 255, 0, 0.3)
-}
-body > * > * > * {
-  background: rgba(0, 0, 255, 0.3)
-}
-body > * > * > * > *  {
-  background: rgba(0, 255, 255, 0.3)
-}
-*/
-
 .container {
   margin: 0 auto;
   padding: 0 10px;
@@ -95,7 +81,6 @@ h2 {
 
 .header {
   padding-bottom: 60px;
-
   font-size: 17px;
 
   background-color: #f4f7f9;
@@ -308,13 +293,13 @@ h2 {
 
 .main-header-wrapper {
   display: flex;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .header-title {
   width: 200px;
   padding: 0;
-  padding-top: 5px;
+  padding-top: 4px;
   margin: 0;
   margin-left: 52px;
 
@@ -379,8 +364,6 @@ h2 {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-
-  text-align: center;
 
   list-style: none;
 }
@@ -1431,16 +1414,22 @@ width: 510px;
   width: 300px;
 }
 
-.account-link a {
+.inner-page .navigation-link {
   position: relative;
-  box-sizing: border-box;
-  display: block;
-  width: 300px;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+
+  background-color: red;
+}
+
+.account-link {
+  position: relative;
+  width: 300px;
   padding-left: 46px;
-  padding-right: 68px;
+  padding-top: 12px;
+  padding-bottom: 13px;
 
   background-color: #ffffff;
 }
@@ -1459,9 +1448,7 @@ width: 510px;
   background-repeat: no-repeat;
 }
 
-.account-link a::after {
-  content: "";
-
+.deauthor-link a {
   position: absolute;
   top: 14px;
   right: 11px;
@@ -1477,7 +1464,7 @@ width: 510px;
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 7px;
+  padding-top: 6px;
   padding-left: 19px;
 
   list-style: none;
@@ -1504,18 +1491,21 @@ width: 510px;
   background-image: url('../img/icon-user-hover.svg');
 }
 
-.account-link a:hover::after,
-.account-link a:focus::after {
+.account-link a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.account-link a:active::before {
+  background-image: url('../img/icon-user.svg');
+}
+
+.deauthor-link a:hover,
+.deauthor-link a:focus {
   background-image: url('../img/icon-logout-hover.svg');
 }
 
-.account-link a:active {
-  color: rgba(0, 0, 0, 0.3)
-}
-
-.account-link a:active::before,
-.account-link a:active::after {
-  opacity: 0.3;
+.deauthor-link a:active {
+  background-image: url('../img/icon-logout.svg');
 }
 
 .navigation-account a:hover,
@@ -1717,6 +1707,7 @@ width: 510px;
   line-height: 18px;
 
   color: #000000;
+  background-color: #ffffff;
 }
 
 /*--------------------ФИЛЬТР. ЦЕНА--------------------*/

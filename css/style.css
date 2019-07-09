@@ -1252,7 +1252,7 @@ width: 510px;
 }
 
 .footer-contact {
-  display: block;
+  margin: 0;
   width: 330px;
   padding-left: 3px;
 
@@ -1614,6 +1614,9 @@ width: 510px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+
   background-color: #f2f6f8;
   color: #32425c;
 }

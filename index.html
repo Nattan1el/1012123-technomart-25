@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min-normalize.css" rel="stylesheet">
+    <link href="css/min-style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
@@ -18,7 +18,7 @@
 
           <form class="search-form" action="#" method="get">
             <input type="search" name="search" id="search" placeholder="Поиск:">
-            <span class="search-background"></span>
+            <label class="search-background" for="search">Поиск:</label>
           </form>
           <a class="header-button bookmark" href="#">Закладки: 0</a>
           <a class="header-button basket" href="basket.html">Корзина: 0</a>
@@ -88,12 +88,12 @@
               <label class="slider-toggle slider-toggle-next" for="switch-right">Переключатель слайда справа</label>
               <div class="slide-switching">
                 <div class="slide slide-1">
-                  <span class="slide-title">Дрели</span>
+                  <h3 class="slide-title">Дрели</h3>
                   <p>Соседям на радость!</p>
                   <a class="section-button button" href="catalog.html">Открыть каталог</a>
                 </div>
                 <div class="slide slide-2">
-                  <span class="slide-title">Перфораторы</span>
+                  <h3 class="slide-title">Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
                   <a class="section-button button" href="catalog.html">Открыть каталог</a>
                 </div>
@@ -117,16 +117,15 @@
             <a class="section-button button" href="#">Все популярные товары</a>
           </div>
           <div class="catalog-items">
-            <div class="flag">новинка</div>
             <div class="catalog-item">
               <a href="catalog.html">
                 <div class="image">
                   <img src="img/bfg9000.jpg"
                     width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
                 </div>
-                <div class="title">Перфоратор BOSCH BFG 9000</div>
-                <div class="discount">32500 Р.</div>
-                <div class="price">25500 Р.</div>
+                <p class="title">Перфоратор BOSCH BFG 9000</p>
+                <p class="discount">32500 Р.</p>
+                <p class="price">25500 Р.</p>
               </a>
               <div class="actions">
                 <a href="basket.html" class="buy" tabindex="0">Купить</a>
@@ -134,15 +133,14 @@
               </div>
             </div>
             <div class="catalog-item">
-              <div class="flag">новинка</div>
               <a href="catalog.html">
                 <div class="image">
                   <img src="img/bfg3000.jpg"
                     width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </div>
-                <div class="title">Перфоратор BOSCH BFG 3000</div>
-                <div class="discount">22500 Р.</div>
-                <div class="price">15500 Р.</div>
+                <p class="title">Перфоратор BOSCH BFG 3000</p>
+                <p class="discount">22500 Р.</p>
+                <p class="price">15500 Р.</p>
               </a>
               <div class="actions">
                 <a href="basket.html" class="buy">Купить</a>
@@ -150,15 +148,14 @@
               </div>
             </div>
             <div class="catalog-item">
-              <div class="flag">новинка</div>
               <a href="catalog.html">
                 <div class="image">
                   <img src="img/bfg6000.jpg"
                     width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </div>
-                <div class="title">Перфоратор BOSCH BFG 6000</div>
-                <div class="discount">30500 Р.</div>
-                <div class="price">25500 Р.</div>
+                <p class="title">Перфоратор BOSCH BFG 6000</p>
+                <p class="discount">30500 Р.</p>
+                <p class="price">25500 Р.</p>
               </a>
               <div class="actions">
                 <a href="basket.html" class="buy">Купить</a>
@@ -171,8 +168,8 @@
                 <img src="img/bfg2000.jpg"
                   width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               </div>
-              <div class="title">Перфоратор BOSCH BFG 2000</div>
-              <div class="price no-discount">12500 Р.</div>
+              <p class="title">Перфоратор BOSCH BFG 2000</p>
+              <p class="price no-discount">12500 Р.</p>
               <div class="actions">
                 <a href="basket.html" class="buy">Купить</a>
                 <a href="#" class="to-bookmark">В закладки</a>
@@ -226,9 +223,11 @@
             <input class="visually-hidden delivery-button" type="radio" id="delivery-button" name="navigation" checked>
             <input class="visually-hidden guarantee-button" type="radio" id="guarantee-button" name="navigation">
             <input class="visually-hidden credit-button" type="radio" id="credit-button" name="navigation">
-            <label for="delivery-button">доставка</label>
-            <label for="guarantee-button">гарантия</label>
-            <label for="credit-button">кредит</label>
+            <div class="service-labels">
+              <label for="delivery-button">доставка</label>
+              <label for="guarantee-button">гарантия</label>
+              <label for="credit-button">кредит</label>
+            </div>
             <div class="service-slider">
               <div class="service-content">
                 <h3>доставка</h3>
@@ -406,9 +405,9 @@
             <textarea name="text" id="contact-text" placeholder="В свободной форме"></textarea>
           </p>
         </div>
-        <p class="user-button">
+        <div class="user-button">
           <button class="button section-button" name="send-button" type="submit">Отправить</button>
-        </p>
+        </div>
       </form>
         <button class="modal-close">Закрыть</button>
       </section>
